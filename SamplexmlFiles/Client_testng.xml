@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none" preserve-order="true">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.pbergo.testscripts.ClientTest">
+      <methods>
+    		  <!--         Script for Add Client -->
+					<include name="verifyLogin" />
+					<include name="verifyopenAdminDashboard" />
+					<include name="verifyOpenClientListing"/>
+					<include name="click_Add_New_Client"/>
+					<include name="verifyAddClient" />
+					
+				<!--         Script for Edit Client -->
+					<include name="verifyClientSearch" />
+					<include name="click_Client_Edit_Link"/>
+					<include name="get_ClientType"/>
+					<include name="click_Update_Btn"/>
+					
+				<!--         Script for Delete Client -->
+					<include name="click_Client_Delete_Link"/>
+					<include name="set_Client_Delete_Reason"/>
+	  </methods>
+				
+				
+			
+				
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

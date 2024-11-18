@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+    
+    					<!-- User Role's Scripts -->
+    					
+    	  <class name="com.pbergo.testscripts.UserRole">
+				<methods>
+					<include name="verifyLogin" />
+					<include name="verifyOpenAdminDashboard" />
+					<include name="verifyOpenUserRoleListing" />
+					<include name="verifyAddUserRole" />
+					<include name="verifyEditUserRole" />
+					<include name="verifyDeleteUserRole" />
+				</methods>
+			</class>
+
+						 <!--  Blogs page Scripts  -->
+
+      			<class name="com.pbergo.testscripts.BlogTest">
+				<methods>
+					<include name="verifyLogin" />
+					<include name="verifyopenAdminDashboard" />
+					<include name="verifyAdminBlogsPage"/>
+ 					<include name="verifyAdminBlog_Heading"/> 
+				</methods>
+				</class>
+	
+						<!-- EmailTemplate Scripts -->
+	
+	<class name="com.pbergo.testscripts.EmailTemplate">
+		<methods>
+			<include name="verifyLogin" />
+			<include name="verifyOpenAdminDashboard" />
+			<include name="verifyOpenEmailTemplateListing" />
+			<include name="verifyAddEmailTemplate" />
+			<include name="verifyEditEmailTemplate" />
+			<include name="verifyDeleteEmailTemplate" />
+		</methods>
+	</class>
+			
+<!--						 Client's Scripts -->
+			
+      <class name="com.pbergo.testscripts.ClientTest">
+		<methods>
+<!-- 			 Script for Add Client  -->
+			<include name="verifyLogin" />
+			<include name="verifyopenAdminDashboard" />
+			<include name="verifyOpenClientListing" />
+			<include name="click_Add_New_Client" />
+			<include name="verifyAddClient" />
+
+<!-- 			 Script for Edit Client  -->
+			<include name="verifyClientSearch" />
+			<include name="click_Client_Edit_Link" />
+			<include name="get_ClientType" />
+			<include name="click_Update_Btn" />
+
+<!-- 			 Script for Delete Client  -->
+			<include name="verifyClientSearch" />
+			<include name="click_Client_Delete_Link" />
+			<include name="set_Client_Delete_Reason" />
+		</methods>
+	</class>
+
+						<!-- User's Scripts -->
+						
+     <class name="com.pbergo.testscripts.UsersTest">
+	<methods>
+		<include name="verifyLogin" />
+		<include name="verifyopenAdminDashboard" />
+		<include name="verifyOpenUserListing" />
+		<include name="click_Add_New_User" />
+		<include name="verifyAddUser" />
+
+<!-- 		 Script for Edit user  -->
+
+		<include name="verifyUserSearch" />
+		<include name="click_User_Edit_Link" />
+		<include name="get_UserRole" />
+		<include name="click_Update_Btn" />
+
+<!-- 		 Script for Delete user  -->
+		
+		<include name="verifyUserSearch" />
+		<include name="click_User_Delete_Link" />
+		<include name="set_User_Delete_Reason" />
+	</methods>
+	</class>
+
+						<!-- SendNotification Scripts -->
+		
+      <class name="com.pbergo.testscripts.SendNotification">
+      	<methods>
+			<include name="verifyLogin" />
+			<include name="verifyOpenAdminDashboard" />
+			<include name="verifyOpenSendNotificationListing" />
+			<include name="verifyAddSendNotification" />
+			<include name="verifyScheduleSendNotification" />
+		</methods>
+	  </class>
+	
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

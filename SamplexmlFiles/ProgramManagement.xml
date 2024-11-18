@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.pbergo.testscripts.ProgramManagementTest">
+				<methods>
+					<include name="verifyLogin" />
+					<include
+						name="verifyopenEmployeeDashboard" />
+					<include
+						name="verifyOpenProgramManagementDashboard" />
+						<include
+						name="verifySearchFunctionality" />
+						<include
+						name="verifyClientViewBtnFunctionality" />
+<!--						<include-->
+<!--						name="verifyprogramsearch" />-->
+<!--				 		<include-->
+<!--						name="verifyselfassessmentsearch" />-->
+<!--						<include-->
+<!--						name="verifyselfassessmenthistory" />-->
+<!--						<include-->
+<!--						name="verifyergoevalsearch" />-->
+<!--						<include-->
+<!--						name="verifyergoevalhistory" />-->
+<!--						<include-->
+<!--						name="verifyfollowupssearch" />-->
+<!--						<include-->
+<!--						name="verifyfollowupshistory" />-->
+<!--						<include-->
+<!--						name="verifyschedulerequestformsearch" />-->
+<!--						<include-->
+<!--						name="verifyschedulerequestformhistory" />   -->
+<!--						<include-->
+<!--						name="reportsearch" />-->
+<!--						<include-->
+<!--						name="verifyreportsdatasetdownload" />-->
+<!--						<include-->
+<!--						name="verifyreportshistory" />-->
+<!--						<include-->
+<!--						name="verifyreportsaddcomment" />-->
+<!--						<include-->
+<!--						name="verifyreportseditsurvey" />-->
+<!--						<include-->
+<!--						name="verifyrequestsearch" />-->
+<!--						<include-->
+<!--						name="verifyrequesthistory" />-->
+<!--						<include-->
+<!--						name="verifyrequestdataset" />-->
+<!--						<include-->
+<!--						name="verifyrequestcomplete" />-->
+<!--						<include-->
+<!--						name="verifyfollowupsearch" />-->
+<!--						<include-->
+<!--						name="verifyfollowuphistory" />-->
+<!--						<include-->
+<!--						name="verifyfollowupdataset" />-->
+<!--						<include-->
+<!--						name="verifyfollowupcomplete" />-->
+						
+						
+				</methods>
+			</class>
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

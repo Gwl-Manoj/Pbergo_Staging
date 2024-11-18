@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<classes>
+			
+<!--			<class name="com.pbergo.testscripts.UsersTest">-->
+<!--				<methods>-->
+<!--					<include name="verifyLogin" />-->
+<!--					<include name="verifyopenAdminDashboard" />-->
+<!--					<include name="verifyOpenUserListing" />-->
+<!--					<include name="click_Add_New_User" />-->
+<!--					<include name="verifyAddUser" />-->
+<!--					<include name="verifyUserSearch" />-->
+<!--					<include name="click_User_Edit_Link" />-->
+<!--					<include name="get_UserRole" />-->
+<!--					<include name="click_Update_Btn" />-->
+<!--					<include name="verifyUserSearch" />-->
+<!--					<include name="click_User_Delete_Link" />-->
+<!--					<include name="set_User_Delete_Reason" />-->
+<!--					<include name="verifyPaginationFunctionality"></include>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfCustomerColumn"></include>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfCustomerColumn"></include>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfNameColumn"></include>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfNameColumn"></include>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfEmailColumn"></include>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfEmailColumn"></include>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfRoleColumn"></include>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfRoleColumn"></include>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfCreatedDateColumn"></include>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfCreatedDateColumn"></include>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfActiveColumn"></include>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfActiveColumn"></include>-->
+<!--					<include name="verifyDateFilterFunctionality"></include>-->
+<!--				</methods>-->
+<!--			</class>-->
+
+<!--			<class name="com.pbergo.testscripts.ClientTest">-->
+<!--				<methods>-->
+<!--					<include name="verifyLogin" />-->
+<!--					<include name="verifyopenAdminDashboard" />-->
+<!--					<include name="verifyOpenClientListing" />-->
+<!--					<include name="click_Add_New_Client" />-->
+<!--					<include name="verifyAddClient" />-->
+<!--					<include name="verifyClientSearch" />-->
+<!--					<include name="click_Client_Edit_Link" />-->
+<!--					<include name="get_ClientType" />-->
+<!--					<include name="click_Update_Btn" />-->
+<!--					<include name="verifyClientSearch" />-->
+<!--					<include name="click_Client_Delete_Link" />-->
+<!--					<include name="set_Client_Delete_Reason" />-->
+<!--					<include name="verifyPaginationFunctionality"></include>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfClientNameColumn"></include>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfClientNameColumn"></include>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfClientCodeColumn"></include>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfClientCodeColumn"></include>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfStatusColumn"></include>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfStatusColumn"></include>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfCreatedDateColumn"></include>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfCreatedDateColumn"></include>-->
+<!--				</methods>-->
+<!--			</class>-->
+
+<!--			<class name="com.pbergo.testscripts.UserRole">-->
+<!--				<methods>-->
+<!--					<include name="verifyLogin" />-->
+<!--					<include name="verifyOpenAdminDashboard" />-->
+<!--					<include name="verifyOpenUserRoleListing" />-->
+<!--					<include name="verifyAddUserRole" />-->
+<!--					<include name="verifyEditUserRole" />-->
+<!--					<include name="verifyDeleteUserRole" />-->
+<!--					<include name = "verifyPaginationFunctionality"/>-->
+<!--					<include name = "verifyAscendingOrderSortingFunctionalityOfUserRoleColumn"/>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfUserRoleColumn"></include>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfDescriptionColumn"></include>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfDescriptionColumn"></include>-->
+<!--				</methods>-->
+<!--			</class>-->
+
+			
+<!--			<class name="com.pbergo.testscripts.BlogTest">-->
+<!--				<methods>-->
+<!--					<include name="verifyLogin" />-->
+<!--					<include name="verifyopenAdminDashboard" />-->
+<!--					<include name="verifyAdminBlogsPage" />-->
+<!--					<include name="verifyAdminBlog_Heading" />-->
+<!--				</methods>-->
+<!--			</class>-->
+
+			
+<!--			<class name="com.pbergo.testscripts.EmailTemplate">-->
+<!--				<methods>-->
+<!--					<include name="verifyLogin" />-->
+<!--					<include name="verifyOpenAdminDashboard" />-->
+<!--					<include name="verifyOpenEmailTemplateListing" />-->
+<!--					<include name="verifyAddEmailTemplate" />-->
+<!--					<include name="verifyEditEmailTemplate" />-->
+<!--					<include name="verifyDeleteEmailTemplate" />-->
+<!--					<include name="verifyPaginationFunctionality"/>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfTemplateNameColumn"/>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfTemplateNameColumn"/>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfSubjectColumn"/>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfSubjectColumn"/>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfClientColumn"/>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfClientColumn"/>-->
+<!--				</methods>-->
+<!--			</class>-->
+
+			
+<!--			<class name="com.pbergo.testscripts.SendNotification">-->
+<!--				<methods>-->
+<!--					<include name="verifyLogin" />-->
+<!--					<include name="verifyOpenAdminDashboard" />-->
+<!--					<include name="verifyOpenSendNotificationListing" />-->
+<!--					<include name="verifyAddSendNotification" />-->
+<!--					<include name="verifyScheduleSendNotification" />-->
+<!--				</methods>-->
+<!--			</class>-->
+
+<!--			<class name="com.pbergo.testscripts.SelfAssessmentTest">-->
+<!--				<methods>-->
+<!--					<include name="verifyLogin" />-->
+<!--					<include name="verifyopenEmployeeDashboard" />-->
+<!--					<include name="verifyOpenSelfAssessment" />-->
+<!--					<include-->
+<!--						name="clickDownloadImagePercentageFromSelfAssessmentActivityByRegion" />-->
+<!--					<include-->
+<!--						name="clickDownloadDocumentPercentageFromSelfAssessmentActivityByRegion" />-->
+<!--					<include-->
+<!--						name="clickDownloadImageHashFromSelfAssessmentActivityByRegion" />-->
+<!--					<include-->
+<!--						name="clickDownloadDocumentHashFromSelfAssessmentActivityByRegion" />-->
+<!--					<include name="clickDownloadDocumentSelfReportedDiscomfort" />-->
+<!--					<include-->
+<!--						name="clickDownloadImageFromSelfReportedDiscomfort" />-->
+<!--					<include name="clickDownloadDocumentEquiRecommandations" />-->
+<!--					<include name="clickDownloadImageFromEquiRecommandation" />-->
+<!--					<include name="clickDownloadImageFromWorkAreaAssessed" />-->
+<!--					<include name="clickDownloadDocumentFromWorkAreaAssessed" />-->
+<!--					<include-->
+<!--						name="clickDownloadImageFromSelfReportedComfortLevels" />-->
+<!--					<include-->
+<!--						name="clickDownloadDocumentFromSelfReportedComfortLevels" />-->
+
+<!--				</methods>-->
+<!--			</class>-->
+
+<!--			<class name="com.pbergo.testscripts.EMPProgramOverviewTest">-->
+<!--				<methods>-->
+<!--					<include name="verifyLogin" />-->
+<!--					<include name="verifyopenEmployeeDashboard" />-->
+<!--					<include name="verifyOpenProgramOverview" />-->
+<!--					<include name="clickDownloadImageFromSiteRegistrants" />-->
+<!--					<include name="clickDownloadDocumentFromSiteRegistrants" />-->
+<!--					<include name="clickYTDOptionFromSiteRegistrants" />-->
+<!--					<include name="clickDownloadImageYTDFromSiteRegistrants" />-->
+<!--					<include name="clickDownloadDocumentYTDFromSiteRegistrants" />-->
+<!--					<include name="clickHashOptionForEVAL" />-->
+<!--					<include name="clickHashOptionForSA" />-->
+<!--					<include name="clickDownloadImageFromTotalActivityRegion" />-->
+<!--					<include-->
+<!--						name="clickDownloadDocumentFromTotalActivityRegion" />-->
+<!--					<include-->
+<!--						name="clickDownloadImageHashFromTotalActivityRegion" />-->
+<!--					<include name="clickDownloadImageFromReasonForAssessment" />-->
+<!--					<include-->
+<!--						name="clickDownloadDocumentFromReasonForAssessment" />-->
+<!--					<include name="clickDownloadImageFromWorkAreaAssessed" />-->
+<!--					<include name="clickDownloadDocumentFromWorkAreaAssessed" />-->
+<!--				</methods>-->
+<!--			</class>-->
+
+<!--			<class name="com.pbergo.testscripts.FollowUpFeedbackTest">-->
+<!--				<methods>-->
+<!--					<include name="verifyLogin" />-->
+<!--					<include name="verifyopenEmployeeDashboard" />-->
+<!--					<include name="verifyOpenFollowUpFeedback" />-->
+<!--					<include name="verifyDateFilterFunctionality"></include>-->
+<!--					<include name="clickDownloadDocumentSelfAssessmentHelpful" />-->
+<!--					<include name="clickDownloadImageFromSelfAssessmentHelpful" />-->
+<!--					<include name="clickDownloadDocumentEvalHelpful" />-->
+<!--					<include name="clickDownloadImageFromEvalHelpful" />-->
+<!--					<include name="clickDownloadImagePercentageFromReportedImprovement" />-->
+<!--					<include name="clickDownloadDocumentPercentageFromReportedImprovement" />-->
+<!--					<include name="clickDownloadImageHashFromReportedImprovement" />-->
+<!--					<include name="clickDownloadDocumentHashFromReportedImprovement" />-->
+<!--					<include name="clickDownloadImageAggregateResponse" />-->
+<!--					<include name="clickDownloadDocumentAggregateResponse" />-->
+<!--					<include name="clickDownloadDocumentFromFurtherAssistenceNeeded" />-->
+<!--					<include name="clickDownloadImageFromFurtherAssistenceNeeded" />-->
+<!--					<include name="clickDownloadHashImageFromFurtherAssistenceNeeded" />-->
+<!--					<include name="clickDownloadHashDoccumentFromFurtherAssistenceNeeded" />-->
+<!--					<include name="verifyPaginationFunctionality" />-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfFirstName" />-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfFirstName" />-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfLastName" />-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfLastName" />-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfEmailAddress" />-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfEmailAddress" />-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfRegion" />-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfRegion" />-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfDateofFollowUp" />-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfDateofFollowUp" />-->
+<!--				</methods>-->
+<!--			</class>-->
+
+<!--			<class name="com.pbergo.testscripts.ErgoEvalActivityTest">-->
+<!--				<methods>-->
+<!--					<include name="verifyLogin" />-->
+<!--					<include name="verifyopenEmployeeDashboard" />-->
+<!--					<include name="verifyOpenErgoEvalActivity" />-->
+<!--					<include name="verifyDateFilterFunctionality"/>-->
+<!--					<include name="clickDownloadImagePercentageFromErgoEvalActivityByRegion" />-->
+<!--					<include name="clickDownloadDocumentPercentageFromErgoEvalActivityByRegion" />-->
+<!--					<include name="clickDownloadImageHashFromSelfAssessmentActivityByRegion" />-->
+<!--					<include name="clickDownloadDocumentHashFromErgoEvalActivityByRegion" />-->
+<!--					<include name="clickDownloadDocumentSelfReportedDiscomfort" />-->
+<!--					<include name="clickDownloadImageFromSelfReportedDiscomfort" />-->
+<!--					<include name="clickDownloadImageFromWorkAreaAssessed" />-->
+<!--					<include name="clickDownloadDocumentFromWorkAreaAssessed" />-->
+<!--					<include name="clickDownloadDocumentEquiRecommandations" />-->
+<!--					<include name="clickDownloadImageFromEquiRecommandation" />-->
+<!--					<include name="verifyPaginationFunctionality" />-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfUserRoleColumn"/>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfUserRoleColumn"/>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfFirstName"/>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfFirstName"/>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfLastName" />-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfLastName" />-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfEmailAddress"/>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfEmailAddress"/>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfLocation" />-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfLocation"/>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfComfort" />-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfComfort" />-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfStatus" />-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfStatus" />-->
+					
+
+<!--				</methods>-->
+<!--			</class>-->
+
+<!--			<class name="com.pbergo.testscripts.EvaluatorTest">-->
+<!--				<methods>-->
+<!--					<include name="verifyLogin" />-->
+<!--					<include name="verifyopenEmployeeDashboard" />-->
+<!--					<include name="verifyOpenEvaluator" />-->
+<!--					<include name="verifyDateFilterFunctionality"></include>-->
+<!--					<include name="verifySearchFunctionality"></include>-->
+<!--					<include name="verifyClientViewBtnFunctionality"></include>-->
+<!--					<include name="verifyReportsInReviewSearchFunctionality"></include>-->
+<!--					<include name="verifyReportsInReviewStatusFilterFunctionality"></include>-->
+<!--					<include name="verifyReportsInReviewDownloadDatasetFunctionality"></include>-->
+<!--					<include name="verifyReportsInReviewAddCommentFunctionality"></include>-->
+<!--					<include name="verifyReportsInReviewHistoryFunctionality"></include>-->
+<!--					<include name="verifyReportsInReviewEditSurveyReportFunctionality"></include>-->
+<!--					<include name="verifyClientPaginationFunctionality" />-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfClienttName"	/>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfClientName"/>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfStatus"/>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfStatus"/>-->
+<!--					<include name="verifyReportsReviewPaginationFunctionality" />-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfDateofEval"/>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfDateofEval"/>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfFirstName"/>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfFirstName"/>-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfLastName"		/>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfLastName" />-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfEmailAddress"/>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfEmailAddress" />-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfClient"/>-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfClient" />-->
+<!--					<include name="verifyAscendingOrderSortingFunctionalityOfRRStatus" />-->
+<!--					<include name="verifyDecendingOrderSortingFunctionalityOfRRStatus" />-->
+							
+<!--				</methods>-->
+<!--			</class>-->
+
+<!--			<class name="com.pbergo.testscripts.ClientActivityTest">-->
+<!--				<methods>-->
+
+<!--					<include name="verifyLogin" />-->
+<!--					<include name="verifyopenEmployeeDashboard" />-->
+<!--					<include name="verifyClientActivity" />-->
+<!--					<include name="verifyClientActivityDocc" />-->
+<!--					<include name="verifyClientActivityIMG" />-->
+<!--					<include name="DocumentForHashAllClient" />-->
+<!--					<include name="ImageForHashAllClient" />-->
+<!--					<include name="verifyRegistraintsBtn" />-->
+<!--					<include name="DoccumentForRegistraints" />-->
+<!--					<include name="DownloadDoccumentForSAActivity" />-->
+<!--					<include name="DownloadImageForSAActivity" />-->
+<!--					<include name="DownloadDoccumentForEvalReports" />-->
+<!--					<include name="DownloadImageForEvalReports" />-->
+<!--					<include name="DownloadDoccumentForErgoEval" />-->
+<!--					<include name="DownloadImageForErgoEval" />-->
+<!--					<include name="DownloadDoccumentForSiteRegistraints" />-->
+<!--					<include name="DownloadImageForSiteRegistraints" />-->
+<!--					<include name="DownloadDoccumentForCurrentSiteRegistraints" />-->
+<!--					<include name="DownloadImageForCurrentSiteRegistraints" />-->
+
+
+
+<!--				</methods>-->
+
+<!--			</class>-->
+
+			<class name="com.pbergo.testscripts.EmployeeSearchTest">
+				<methods>
+					<include name="verifyLogin" />
+					<include name="verifyopenEmployeeDashboard" />
+					<include name="openEmployeeSearchLink" />
+					<include name="programsearch" />
+					<include name="selfassessmentsearch" />
+					<include name="selfassessmenthistory" />
+					<include name="ergoevalsearch" />
+					<include name="followupssearch" />
+					<include name="followupshistory" />
+					<include name="schedulerequestformsearch" />
+					<include name="schedulerequestformhistory" />
+					
+					<include name="verifyClientPaginationFunctionalitySA" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfFirstNameSA" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfFirstNameSA" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfLastNameSA" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfLastNameSA" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfDOESA" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfDOESA" />
+					<include name="verifyClientPaginationFunctionalityEE" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfFirstNameEE" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfFirstNameEE" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfLastNameEE" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfLastNameEE" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfDOEEE" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfDOEEE" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfEvaluatorEE" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfEvaluatorEE" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfStatusEE" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfStatusEE" />
+					<include name="verifyClientPaginationFunctionalityFU" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfFirstNameFU" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfFirstNameFU" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfLastNameFU" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfLastNameFU" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfDOEFU" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfDOEFU" />
+					<include name="verifyClientPaginationFunctionalitySRF" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfFirstNameSRF" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfFirstNameSRF" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfLastNameSRF" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfLastNameSRF" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfDOESRF" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfDOESRF" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfStatusSRF" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfStatusSRF" />
+
+					<include name="verifyPaginationFunctionality" />
+						<include name="verifyAscendingOrderSortingFunctionalityOfFirstName" />
+						<include name="verifyDecendingOrderSortingFunctionalityOfFirstName"/>
+						<include name="verifyAscendingOrderSortingFunctionalityOfLastName" />
+						<include name="verifyDecendingOrderSortingFunctionalityOfLastName" />
+						<include name="verifyAscendingOrderSortingFunctionalityOfEmailAddress"/>
+						<include name="verifyDecendingOrderSortingFunctionalityOfEmailAddress"/>
+						<include name="verifyAscendingOrderSortingFunctionalityOfRegion" />
+						<include name="verifyDecendingOrderSortingFunctionalityOfRegion" />
+				</methods>
+			</class>
+
+
+
+			<class name="com.pbergo.testscripts.ProgramManagementTest">
+				<methods>
+					<include name="verifyLogin" />
+					<include name="verifyopenEmployeeDashboard" />
+					<include name="verifyOpenProgramManagementDashboard" />
+					<include name="verifyClientPaginationFunctionality" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfClienttName" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfClientName" />
+					<include name="verifySearchFunctionality" />
+					<include name="verifyClientViewBtnFunctionality" />
+					<include name="verifyClientPaginationFunctionality" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfFirstName" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfFirstName" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfLastName" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfLastName" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfEmailAddress" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfEmailAddress" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfRegion" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfRegion" />
+					<include name="verifyprogramsearch" />
+					<include name="verifyClientPaginationFunctionalitySA" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfFirstNameSA" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfFirstNameSA" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfLastNameSA" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfLastNameSA" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfDOESA" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfDOESA" />
+					<include name="verifyClientPaginationFunctionalityEE" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfFirstNameEE" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfFirstNameEE" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfLastNameEE" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfLastNameEE" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfDOEEE" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfDOEEE" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfEvaluatorEE" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfEvaluatorEE" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfStatusEE" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfStatusEE" />
+					<include name="verifyClientPaginationFunctionalityFU" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfFirstNameFU" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfFirstNameFU" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfLastNameFU" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfLastNameFU" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfDOEFU" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfDOEFU" />
+					<include name="verifyClientPaginationFunctionalitySRF" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfFirstNameSRF" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfFirstNameSRF" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfLastNameSRF" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfLastNameSRF" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfDOESRF" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfDOESRF" />
+					<include name="verifyAscendingOrderSortingFunctionalityOfStatusSRF" />
+					<include name="verifyDecendingOrderSortingFunctionalityOfStatusSRF" />
+				 		<include name="verifyselfassessmentsearch" />
+						<include name="verifyselfassessmenthistory" />
+						<include name="verifySelfAssesmentReports_DownloadFunctionality"/>
+						<include name="verifySelfAssesment_SummaryReport_DownloadFunctionality"/>
+						<include name="verifyergoevalsearch" />
+						<include name="verifyergoevalhistory" />
+						<include name="verifyErgoEvalReports_DownloadFunctionality"/>
+						<include name="verifyErgoEval_SummaryReport_DownloadFunctionality"/>
+						<include name="verifyfollowupssearch" />
+						<include name="verifyfollowupshistory" />
+						<include name="verifyschedulerequestformsearch" />
+						<include name="verifyschedulerequestformhistory" />   
+						<include name="reportsearch" />
+						<include name="verifyreportsdatasetdownload" />
+						<include name="verifyreportshistory" />
+						<include name="verifyreportsaddcomment" />
+						<include name="verifyreportseditsurvey" />
+						<include name="verifyClientPaginationFunctionality" />
+						<include name="verifyAscendingOrderSortingFunctionalityOfDOE" />
+						<include name="verifyDecendingOrderSortingFunctionalityOfDOE" />
+						<include name="verifyAscendingOrderSortingFunctionalityOfClienttNameEV" />
+						<include name="verifyDecendingOrderSortingFunctionalityOfClientNameEV" />
+						<include name="verifyAscendingOrderSortingFunctionalityOfFirstNameEV" />
+						<include name="verifyDecendingOrderSortingFunctionalityOfFirstNameEV" />
+						<include name="verifyAscendingOrderSortingFunctionalityOfLastNameEV" />
+						<include name="verifyDecendingOrderSortingFunctionalityOfLastNameEV" />
+						<include name="verifyAscendingOrderSortingFunctionalityOfEmailEV" />
+						<include name="verifyDecendingOrderSortingFunctionalityOfEmailEV" />
+						<include name="verifyAscendingOrderSortingFunctionalityOfEvaluatorEV" />
+						<include name="verifyDecendingOrderSortingFunctionalityOfEvaluatorEV" />
+						<include name="verifyAscendingOrderSortingFunctionalityOfStatusEV" />
+						<include name="verifyDecendingOrderSortingFunctionalityOfStatusEV" />
+						<include name="verifyrequestsearch" />
+						<include name="verifyrequesthistory" />
+						<include name="verifyrequestdataset" />
+						<include name="verifyrequestcomplete" />
+						<include name="verifyAscendingOrderSortingFunctionalityOfDOERQ" />
+						<include name="verifyDecendingOrderSortingFunctionalityOfDOERQ" />
+						<include name="verifyAscendingOrderSortingFunctionalityOfFirstNameRQ" />
+						<include name="verifyDecendingOrderSortingFunctionalityOfFirstNameRQ" />
+						<include name="verifyAscendingOrderSortingFunctionalityOfLastNameRQ" />
+						<include name="verifyDecendingOrderSortingFunctionalityOfLastNameRQ" />
+						<include name="verifyAscendingOrderSortingFunctionalityOfEmailRQ" />
+						<include name="verifyDecendingOrderSortingFunctionalityOfEmailRQ" />
+						<include name="verifyAscendingOrderSortingFunctionalityOfStatusRQ" />
+						<include name="verifyDecendingOrderSortingFunctionalityOfStatusRQ" />
+						<include name="verifyfollowupsearch" />
+						<include name="verifyfollowuphistory" />
+						<include name="verifyfollowupdataset" />
+						<include name="verifyfollowupcomplete" />
+						<include name="verifyPaginationFunctionality"></include>
+						<include name="verifyAscendingOrderSortingFunctionalityOfFollowUpOnColumn"></include>
+						<include name="verifyDecendingOrderSortingFunctionalityOfFollowUpOnColumn"></include>
+						<include name="verifyAscendingOrderSortingFunctionalityOfEmpFirstNameColumn"></include>
+						<include name="verifyDecendingOrderSortingFunctionalityOfEmpFirstNameColumn"></include>
+						<include name="verifyAscendingOrderSortingFunctionalityOfEmpLastNameColumn"></include>
+						<include name="verifyDecendingOrderSortingFunctionalityOfEmpLastNameColumn"></include>
+						<include name="verifyAscendingOrderSortingFunctionalityOfEmailColumn"></include>
+						<include name="verifyDecendingOrderSortingFunctionalityOfEmailColumn"></include>
+						<include name="verifyAscendingOrderSortingFunctionalityOfComfortColumn"></include>
+						<include name="verifyDecendingOrderSortingFunctionalityOfComfortColumn"></include>
+						<include name="verifyAscendingOrderSortingFunctionalityOfStatusColumn"></include>
+						<include name="verifyDecendingOrderSortingFunctionalityOfStatusColumn"></include>
+						
+						
+				</methods>
+			</class>
+
+<!--			<class name="com.pbergo.testscripts.MyReportTest">-->
+<!--				<methods>-->
+<!--					<include name="verifyLogin" />-->
+<!--					<include name="verifyopenEmployeeDashboard" />-->
+<!--					<include name="verifyReports_DownloadFunctionality" />-->
+<!--					<include name="verifyCurrentReportSearchFunctionality"></include>-->
+<!--					<include-->
+<!--						name="verifyEquipementRecommendationSearchAndViewBtnFunctionality"></include>-->
+<!--					<include name="verifyRecommendedVideoSliderFunctionality" />-->
+<!--					<include name ="verifyRecommendedVideosPlayPauseFunctionality"/>-->
+<!--					<include name="verifyReports_ViewAndDownloadFunctionality"></include>-->
+<!--					<include name="verifyDateFilterFunctionalityOfCurrentReportSection"></include>-->
+<!--					<include name="verifyDateFilterFunctionalityOfEquipementRecommendationSection"></include>-->
+<!--					<include name="verifyDateFilterFunctionalityOfQuickFixesSection"></include>-->
+<!--							<include name="verifyCurrentReportPaginationFunctionality"></include>-->
+<!--								<include name="verifyAscendingOrderSortingFunctionalityOfDateOfAssessment"></include>-->
+<!--								<include name="verifyDecendingOrderSortingFunctionalityOfDateOfAssessment" />-->
+<!--								<include name="verifyAscendingOrderSortingFunctionalityOfTypesOfAssessment"></include>-->
+<!--									<include name="verifyDecendingOrderSortingFunctionalityOfTypesOfAssessment"></include>-->
+<!--								<include name="verifyEquipmentRecommendationPaginationFunctionality"></include>-->
+<!--								<include name="verifyAscendingOrderSortingFunctionalityOfDateOfAssessmentER"/>-->
+<!--								<include name="verifyDecendingOrderSortingFunctionalityOfDateOfAssessmentER"></include>-->
+<!--									<include name="verifyAscendingOrderSortingFunctionalityOfEquipmentRecommendation"></include>-->
+<!--								<include name="verifyDecendingOrderSortingFunctionalityOfEquipmentRecommendation"></include>-->
+<!--								<include name="verifyAscendingOrderSortingFunctionalityOfTypesOfAssessmentER" />-->
+<!--								<include name="verifyDecendingOrderSortingFunctionalityOfTypesOfAssessmentER"></include>-->
+					
+<!--				</methods>-->
+<!--			</class>-->
+
+<!--			<class name="com.pbergo.testscripts.HelpCenterTest">-->
+<!--				<methods>-->
+<!--					<include name="verifyLogin" />-->
+<!--					<include name="verifyopenEmployeeDashboard" />-->
+<!--					<include name="CenterDashboardLearningTutorials" />-->
+<!--					<include name="ErgoActivityDashboard" />-->
+<!--					<include name="YourPersonalDashboard" />-->
+<!--					<include name="EvaluationDashboard" />-->
+<!--					<include name="ProgramManagementDashboard" />-->
+<!--					<include name="ErgoEval" />-->
+<!--					<include name="MyReports" />-->
+<!--					<include name="MyData" />-->
+<!--					<include name="AdditionalSupports" />-->
+<!--				</methods>-->
+<!--			</class>-->
+
+		</classes>
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

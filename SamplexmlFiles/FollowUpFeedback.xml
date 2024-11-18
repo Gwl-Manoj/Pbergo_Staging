@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.pbergo.testscripts.FollowUpFeedbackTest">
+				<methods>
+
+					<include name="verifyLogin" />
+					<include name="verifyopenEmployeeDashboard" />
+					<include name="verifyOpenFollowUpFeedback" />
+					<include name="clickDownloadDocumentSelfAssessmentHelpful" />
+					<include name="clickDownloadImageFromSelfAssessmentHelpful" />
+		 			<include name="clickDownloadDocumentEvalHelpful" />
+					<include name="clickDownloadImageFromEvalHelpful" />
+					<include name="clickDownloadImagePercentageFromReportedImprovement" />
+					<include name="clickDownloadDocumentPercentageFromReportedImprovement" />
+					<include name="clickDownloadImageHashFromReportedImprovement" />
+					<include name="clickDownloadDocumentHashFromReportedImprovement" />
+					<include name="clickDownloadImageAggregateResponse" />
+					<include name="clickDownloadDocumentAggregateResponse" />
+					<include name="clickDownloadDocumentFromFurtherAssistenceNeeded" />
+					<include name="clickDownloadImageFromFurtherAssistenceNeeded" />
+					<include name="clickDownloadHashImageFromFurtherAssistenceNeeded" />
+					<include name="clickDownloadHashDoccumentFromFurtherAssistenceNeeded" />
+
+
+				</methods>
+			</class>
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

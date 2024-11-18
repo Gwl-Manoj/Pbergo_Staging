@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.pbergo.testscripts.CommonFeaturesTest">
+      
+				<methods>
+					<include name="verifyLogin" />
+					<include name="verifyopenEmployeeDashboard" />
+					<include name="selectDate" />
+<!--					<include name="verifySearchFunctionality"></include>-->
+<!--					<include name="verifyClientViewBtnFunctionality"></include>-->
+<!--					<include name="verifyReportsInReviewSearchFunctionality"></include>-->
+<!--					<include-->
+<!--						name="verifyReportsInReviewStatusFilterFunctionality"></include>-->
+<!--					<include-->
+<!--						name="verifyReportsInReviewDownloadDatasetFunctionality"></include>-->
+<!--					<include-->
+<!--						name="verifyReportsInReviewAddCommentFunctionality"></include>-->
+<!--					<include name="verifyReportsInReviewHistoryFunctionality"></include>-->
+<!--					<include-->
+<!--						name="verifyReportsInReviewEditSurveyReportFunctionality"></include>-->
+				</methods>
+			
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<classes>
+	<class name="com.pbergo.testscripts.HelpCenterTest">
+		<methods>
+			<include name="verifyLogin" />
+			<include name="verifyopenEmployeeDashboard" />
+			<include name="CenterDashboardLearningTutorials" />
+			<include name="ErgoActivityDashboard" />
+			<include name="YourPersonalDashboard" />
+			<include name="EvaluationDashboard" />
+			<include name="ProgramManagementDashboard" />
+			<include name="ErgoEval" />
+			<include name="MyReports" />
+			<include name="MyData" />
+			<include name="AdditionalSupports" />
+		</methods>
+	</class>
+</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

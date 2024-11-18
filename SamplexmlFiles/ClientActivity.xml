@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.pbergo.testscripts.ClientActivityTest">
+				<methods>
+
+					<include name="verifyLogin" />
+					<include name="verifyopenEmployeeDashboard" />
+					<include name="verifyClientActivity" />
+					<include name="verifyClientActivityDocc" />
+					<include name="verifyClientActivityIMG" />
+					<include name="DocumentForHashAllClient" />
+					<include name="ImageForHashAllClient" />
+					<include name="verifyRegistraintsBtn" />
+					<include name="DoccumentForRegistraints" />
+					<include name="DownloadDoccumentForSAActivity" />
+					<include name="DownloadImageForSAActivity" />
+					<include name="DownloadDoccumentForEvalReports" />
+					<include name="DownloadImageForEvalReports" />
+					<include name="DownloadDoccumentForErgoEval" />
+					<include name="DownloadImageForErgoEval" />
+					<include name="DownloadDoccumentForSiteRegistraints" />
+					<include name="DownloadImageForSiteRegistraints" />
+					<include name="DownloadDoccumentForCurrentSiteRegistraints" />
+					<include name="DownloadImageForCurrentSiteRegistraints" />
+					
+					
+					
+				</methods>
+
+			</class>
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
